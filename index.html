@@ -2,17 +2,83 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<html>
+<head>
+	<meta name="generator" content="Hugo 0.42.1" />
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	<title>@m1sn1k</title>
+	
+	<meta name="twitter:card" content="summary_large_image"></meta>
+	<meta name="twitter:site" content="@m1sn1k"></meta>
+	<meta name="twitter:creator" content="@m1sn1k"></meta>
+	<meta property="og:url" content="https://m1sn1k.github.io/"></meta>
+	<meta property="og:title" content="@m1sn1k"></meta>
+	<meta property="og:image" content="https://m1sn1k.github.io/title.jpg"></meta>
 
-      <div class="entry">
-        {{ post.excerpt }}
+	<link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/style/about.css">
+
+	
+
+</head>
+<body>
+	<header>
+		<div id="top">
+			<div id="blog-title">
+				<h1><a href="https://m1sn1k.github.io/">@m1sn1k</a></h1>
+			</div>
+			<div id="blog-menu">
+				<a href="https://m1sn1k.github.io/">Blog</a>
+				
+					<a href="https://m1sn1k.github.io/about/">About</a>&nbsp;
+				
+					<a href="https://twitter.com/m1sn1k">Twitter</a>&nbsp;
+				
+					<a href="https://github.com/m1sn1k">GitHub</a>&nbsp;
+				
+				
+			</div>
+		</div>
+		<img id="blog-title-image" src="title.jpg">
+	</header>
+
+	<content>
+		<h1 class="post-title">Blog</h1>
+		
+		<h1>2021</h1>
+		<ul>
+			
+      <div class="posts">
+        {% for post in site.posts %}
+          <article class="post">
+      
+            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      
+            <div class="entry">
+              {{ post.excerpt }}
+            </div>
+      
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          </article>
+        {% endfor %}
       </div>
+			
+		</ul>
+		
+			</content>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+	<footer>
+		Copyright © Oleksii Misnik, 2021
+	</footer>
+	
+	<button onclick="topFunction()" id="scroll-btn" title="Go to top">▲</button>
+	
+	<script src="https://m1sn1k.github.io/scripts.js"></script>
+	
+</body>
+</html>
+
+
+
