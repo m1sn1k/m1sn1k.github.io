@@ -8,7 +8,7 @@ permalink: /about/
 
 
 <meta charset="utf-8">    
-<title>About me</title>
+
 <link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/style/about.css">
 </head>
 <title>About - @m1sn1k</title>
