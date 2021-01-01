@@ -15,7 +15,7 @@ permalink: /about/
 <h1 class="post-title">About</h1>
 <link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/styles.css">
 
-<p>My contacts:</p>
+<h4>My contacts:</h4>
 
 <ul>
 <li>Email: <a href="mailto:m1sn1k@gmail.com">m1sn1k@gmail.com</a></li>
@@ -28,10 +28,11 @@ permalink: /about/
 <p class="has-line-data" data-line-start="4" data-line-end="5">Cybersecurity engineer with over five years of hands-on experience in information security, technical background in penetration testing, building a secure platform and infrastructure.</p>
 <h4 class="has-line-data" data-line-start="6" data-line-end="7">Strengths in work:</h4>
 <ul>
-<li class="has-line-data" data-line-start="8" data-line-end="9">Driving secure development lifecycle initiatives</li>
 <li class="has-line-data" data-line-start="9" data-line-end="10">Web and Mobile apps Penetration Testing</li>
-<li class="has-line-data" data-line-start="10" data-line-end="11">Researching, developing and/or customizing security tools</li>
 <li class="has-line-data" data-line-start="11" data-line-end="12">External Perimeter Penetration Testing</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11">Researching, developing and/or customizing security tools</li>
+<li class="has-line-data" data-line-start="8" data-line-end="9">Driving secure development lifecycle initiatives</li>
+
 </ul>
 <h4 class="code-line" data-line-start=12 data-line-end=13><a id="Pentest_for_money_12"></a>Pentest for money</h4>
 <ul>
@@ -40,7 +41,7 @@ permalink: /about/
 <h4 class="code-line" data-line-start=16 data-line-end=17><a id="Work_Rules_16"></a>Work Rules:</h4>
 <ul>
 <li class="has-line-data" data-line-start="17" data-line-end="18">Work officially with Companies</li>
-<li class="has-line-data" data-line-start="18" data-line-end="20">No illegal pentest!</li>
+<li class="has-line-data" data-line-start="18" data-line-end="20">No illegal pentest and research!</li>
 </ul>
 <h4 class="code-line" data-line-start=20 data-line-end=21><a id="Certification_20"></a>Certification</h4>
 <ul>
