@@ -6,10 +6,8 @@ permalink: /about/
 <html>
 <head>
 <meta charset="utf-8">
-<title>About me</title>
-<link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/style/about.css">
-</head>
-<body id="preview">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>About - @m1sn1k</title>
 	
@@ -19,6 +17,12 @@ permalink: /about/
 	<meta property="og:url" content="https://m1sn1k.github.io/about/"></meta>
 	<meta property="og:title" content="About"></meta>
 	<meta property="og:image" content="https://m1sn1k.github.io/about/title.jpeg"></meta>
+
+<title>About me</title>
+<link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/style/about.css">
+</head>
+<body id="preview">
+    
 
     <h1 class="code-line" data-line-start=0 data-line-end=1><a id="About_me_0"></a>HTB Profile</h1>
     <p class="has-line-data" data-line-start="2" data-line-end="3"><img src="http://www.hackthebox.eu/badge/image/576" alt="Hack The Box"></p>
