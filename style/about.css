@@ -34,3 +34,6 @@ content h1, content h2, content h3, content h4, content h5, content h6 {
 content h1 code, content h2 code, content h3 code, content h4 code, content h5 code, content h6 code {
 	font-size: 100%;
 }
+img {
+	max-width: 100%;
+}
