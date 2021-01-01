@@ -6,7 +6,7 @@ permalink: /about/
 <html>
 <head>
 <meta charset="utf-8">    
-
+<meta property="og:image" content="https://m1sn1k.github.io/about.jpg"></meta>
 <link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/styles.css">
 </head>
 
