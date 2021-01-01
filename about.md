@@ -7,7 +7,7 @@ permalink: /about/
 <head>
 <meta charset="utf-8">
 <title>About me</title>
-<link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/style.css">
+<link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/style_own_part.css">
 </head>
 <body id="preview">
     <h1 class="code-line" data-line-start=0 data-line-end=1><a id="About_me_0"></a>About me</h1>
