@@ -3,24 +3,20 @@ layout: page
 permalink: /about/
 ---
 
+#### My contacts:
+
+Email: m1sn1k@gmail.com
+Twitter: @m1sn1k
+GitHub: @m1sn1k
+LinkedIn: @m1sn1k
+
 <html>
 <head>
-<meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>About - @m1sn1k</title>
-	
-	<meta name="twitter:card" content="summary_large_image"></meta>
-	<meta name="twitter:site" content="@m1sn1k"></meta>
-	<meta name="twitter:creator" content="@m1sn1k"></meta>
-	<meta property="og:url" content="https://m1sn1k.github.io/about/"></meta>
-	<meta property="og:title" content="About"></meta>
-	<meta property="og:image" content="https://m1sn1k.github.io/about/title.jpeg"></meta>
-
+<meta charset="utf-8">    
 <title>About me</title>
 <link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/style/about.css">
 </head>
+<title>About - @m1sn1k</title>
 <body id="preview">
     
 
