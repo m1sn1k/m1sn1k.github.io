@@ -5,12 +5,15 @@ permalink: /about/
 
 <html>
 <head>
-<meta property="og:image" content="https://m1sn1k.github.io/images/about.jpg">
 <link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/styles.css">
 </head>
 
 <body id="preview">
+
+<header> <img id="blog-title-image" src="/images/about.jpg"></header>
+
 <h1 class="post-title">About</h1>
+<h1 class="post-title">Blog</h1>
 
 <p>My contacts:</p>
 
