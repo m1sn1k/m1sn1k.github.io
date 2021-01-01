@@ -13,7 +13,7 @@ permalink: /about/
 <header> <img id="blog-title-image" src="/images/about.jpg"></header>
 
 <h1 class="post-title">About</h1>
-<h1 class="post-title">Blog</h1>
+<link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/styles.css">
 
 <p>My contacts:</p>
 
