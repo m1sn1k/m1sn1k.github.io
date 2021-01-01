@@ -35,7 +35,7 @@ permalink: /about/
 <li class="has-line-data" data-line-start="10" data-line-end="11">Researching, developing and/or customizing security tools</li>
 <li class="has-line-data" data-line-start="11" data-line-end="12">External Perimeter Penetration Testing</li>
 </ul>
-<h3 class="code-line" data-line-start=12 data-line-end=13><a id="Pentest_for_money_12"></a>Pentest for money</h3>
+<h1 class="code-line" data-line-start=12 data-line-end=13><a id="Pentest_for_money_12"></a>Pentest for money</h1>
 <ul>
 <li class="has-line-data" data-line-start="14" data-line-end="16">I do pentest for money and I work officially with Companies</li>
 </ul>
