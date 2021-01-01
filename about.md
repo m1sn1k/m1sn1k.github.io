@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 permalink: /about/
 ---
+
 
 <html>
 <head>
