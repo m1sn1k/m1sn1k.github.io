@@ -2,8 +2,7 @@
 layout: default
 ---
 
-<meta property="og:image" content="https://m1sn1k.github.io/images/title.jpeg"></meta>
-
+![Intro](https://m1sn1k.github.io/images/title.jpeg)
 
 <div class="posts">
   {% for post in site.posts %}
