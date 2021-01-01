@@ -22,9 +22,9 @@ permalink: /about/
 <li>LinkedIn: <a href="https://www.linkedin.com/in/m1sn1k/">@m1sn1k</a></li>
 </ul>
 
-<p class="has-line-data" data-line-start="6" data-line-end="7">Bio:</p>
+<h4 class="has-line-data" data-line-start="6" data-line-end="7">Bio:</h4>
 <p class="has-line-data" data-line-start="4" data-line-end="5">Cybersecurity engineer with over five years of hands-on experience in information security, technical background in penetration testing, building a secure platform and infrastructure.</p>
-<p class="has-line-data" data-line-start="6" data-line-end="7">Strengths in work:</p>
+<h4 class="has-line-data" data-line-start="6" data-line-end="7">Strengths in work:</h4>
 <ul>
 <li class="has-line-data" data-line-start="8" data-line-end="9">Driving secure development lifecycle initiatives</li>
 <li class="has-line-data" data-line-start="9" data-line-end="10">Web and Mobile apps Penetration Testing</li>
