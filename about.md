@@ -11,7 +11,7 @@ permalink: /about/
 </head>
 
 <body id="preview">
-
+<h1 class="post-title">About - @m1sn1k</h1>
 <title>About - @m1sn1k</title>
 <h1 class="post-title">About</h1>
 
