@@ -5,7 +5,6 @@ permalink: /about/
 
 <html>
 <head>
-<meta charset="utf-8"></meta>
 <meta property="og:image" content="https://m1sn1k.github.io/about.jpg"></meta>
 <link rel="stylesheet" type="text/css" href="https://m1sn1k.github.io/styles.css">
 </head>
@@ -46,7 +45,6 @@ permalink: /about/
 <li class="has-line-data" data-line-start="23" data-line-end="25"><a href="https://elearnsecurity.com/product/emapt-certification/">eMAPT</a></li>
 </ul>
 <h4 class="code-line" data-line-start=20 data-line-end=21><a id="CTF"></a>CTF</h4>
-<h4 class="code-line" data-line-start=0 data-line-end=1><a id="HTB Profile"></a>HTB Profile</h4>
 <ul>
 <li class="has-line-data" data-line-start="22" data-line-end="23"><a href="https://www.hackthebox.eu/home/users/profile/576">HTB profile link</a></li>
 
