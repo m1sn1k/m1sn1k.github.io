@@ -287,3 +287,23 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+/* Common styles */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Roboto+Mono&subset=cyrillic');
+
+body {
+	font-family: 'Merriweather', 'Geogria', sans-serif;
+	max-width: 800px;
+	margin: auto;
+	font-size: 15px;
+	padding: 0 5px 5px 5px;
+	-webkit-text-size-adjust: 100%;
+}
+ul {
+	list-style-type: square;
+}
+
+a {
+	color: #ed6827;
+	text-decoration: none;
+}
