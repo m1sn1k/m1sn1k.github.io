@@ -46,8 +46,8 @@ permalink: /about/
 <ul>
 <li class="has-line-data" data-line-start="22" data-line-end="23"><a href="https://www.offensive-security.com/pwk-oscp/">OSCP</a></li>
 <li class="has-line-data" data-line-start="23" data-line-end="25"><a href="https://elearnsecurity.com/product/emapt-certification/">eMAPT</a></li>
+</ul>
 <h3 class="code-line" data-line-start=20 data-line-end=21><a id="CTF"></a>CTF</h3>
-<ul>
 <h3 class="code-line" data-line-start=0 data-line-end=1><a id="HTB Profile"></a>HTB Profile</h3>
 <li class="has-line-data" data-line-start="22" data-line-end="23"><a href="https://www.hackthebox.eu/home/users/profile/576">HTB profile link</a></li>
 <p class="has-line-data" data-line-start="2" data-line-end="3"><img src="http://www.hackthebox.eu/badge/image/576" alt="Hack The Box"></p>
