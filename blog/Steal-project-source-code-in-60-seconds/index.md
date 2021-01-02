@@ -2,7 +2,7 @@
 layout: default
 ---
 
-### Steal project Company Source Code in 60 seconds
+### Steal project Source Code in 60 seconds
 
 ----------
 
@@ -18,21 +18,37 @@ For notes used test env as HTB Machine - Laboratory because real env under NDA.
 
 And i can see that Gitlab is hosted. I saw open Register function and Try do it!
 
+----------
+
 ![register](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/register.jpg)
+
+----------
 
 Now i registered myself as oleksii and logged in
 
+----------
+
 ![login](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/login.jpg)
+
+----------
 
 Didn’t see anything good and juicy then i just go to https://gitlab.site.io/help
 
+----------
+
 ![version](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/version.jpg)
+
+----------
 
 So its 12.8.1 , so searched a bit about it on google and got so many CVEs. And on rapid7.com site saw info about vulnerabilities, it was disclosed few months ago (Created 12/10/2020) and was about LFI & RCE. The RCE only affects versions 12.4.0 and above when the vulnerable `experimentation_subject_id` cookie was introduced. Tested on GitLab 12.8.1 and 12.4.0.
 
 This picture in Company Gitlab CI says a lot:)
 
+----------
+
 ![asap](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/asap.jpg#center)
+
+----------
 
 #### RCE in the gitlab
 
@@ -82,6 +98,8 @@ msf6 exploit(multi/http/gitlab_file_read_rce) > exploit
 [*] Deleted project /oleksii/Dyb4bxA6
 [*] Attempting to delete project /oleksii/L8SKsN52
 [*] Deleted project /oleksii/L8SKsN52
+
+Servers down wait when ut give up and add first ls -la command rezult ;) Free HTB account, ok.
 ```
 
 Often during pen tests you may obtain a shell without having tty, yet wish to interact further with the system. Here are some commands which will allow you to spawn a tty shell. Obviously some of this will depend on the system environment and installed packages.
