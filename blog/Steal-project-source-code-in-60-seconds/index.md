@@ -32,7 +32,7 @@ Now i registered myself as oleksii and logged in
 
 ----------
 
-Didn’t see anything good and juicy then i just go to https://gitlab.site.io/help
+Didn’t see anything good and juicy then i just go to `https://gitlab.site.io/help`
 
 ----------
 
@@ -52,7 +52,7 @@ This picture in Company Gitlab CI says a lot:)
 
 #### RCE in the gitlab
 
-Now i can that i exploitetion RCE using msfconsole tool https://www.rapid7.com/db/modules/exploit/multi/http/gitlab_file_read_rce because exploit was development and added it to exploit list. 
+Now i can that i exploitetion RCE using msfconsole tool `https://www.rapid7.com/db/modules/exploit/multi/http/gitlab_file_read_rce` because exploit was development and added it to exploit list. 
 
 ```
 msf6 exploit(multi/http/gitlab_file_read_rce) > use exploit/multi/http/gitlab_file_read_rce
@@ -110,7 +110,7 @@ python3 -c 'import pty; pty.spawn("/bin/sh")'
 
 #### Resetting admin password
 
-Now since the gitlab is installed i can spawn a gitlab-rails console and reset the admin password , and check who is admin. Resetting admin password offical document link https://docs.gitlab.com/12.10/ee/security/reset_root_password.html
+Now since the gitlab is installed i can spawn a gitlab-rails console and reset the admin password , and check who is admin. Resetting admin password offical document link `https://docs.gitlab.com/12.10/ee/security/reset_root_password.html`
 
 Used command from this doc I could reset admin password. Start a Ruby on Rails console with this command:
 ```
@@ -125,7 +125,7 @@ There are multiple ways to find your user. You can search for email or username.
 
 or
 
-Other type get username and email without Gitlab authentification is use api https://gitlab.site.io/api/v4/users/1 
+Other type get username and email without Gitlab authentification is use api `https://gitlab.site.io/api/v4/users/1`
 
 Now you can change your password:
 ```
