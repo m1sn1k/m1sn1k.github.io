@@ -4,8 +4,9 @@ layout: default
 
 ### Steal project Company Source Code in 60 seconds
 
-|![title](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/title.jpg)|
--
+![title](https://m1sn1k.github.io/blog/Steal-project-source-code-in-60-seconds/title.jpg)[1]
+
+----------
 
 The journey starts with Company Gitlab CI with open register functional that i got from the rsource company list , Gitlab is self hosted on barametal hosting. The Current version of the gitlab-ce is vulnerable to LFI and RCE exploiting the RCE and getting initial shell in a server , Changing the admin account with github-rails console and login as him on gitlab. Got the private credentials. keys in a project-repo.
 
