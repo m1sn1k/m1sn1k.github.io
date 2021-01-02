@@ -182,6 +182,6 @@ Exit the console and try to login with your new password.
 
 Now can login as admin - dexter : secret_pass and can see all repos with credentials and keys. 
 
-So now see how can steal project Source code in 60 seconds because I think If you repeat all commands from this note then spend no more than 60 second. 
+So now see how can steal project Source code in 60 seconds because I think If you repeat all commands from this note then spend no more than 60 seconds. 
 
  
