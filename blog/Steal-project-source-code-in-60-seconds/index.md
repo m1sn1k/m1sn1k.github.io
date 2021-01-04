@@ -121,13 +121,14 @@ python3 -c 'import pty; pty.spawn("/bin/sh")'
 Now since the gitlab is installed i can spawn a gitlab-rails console and reset the admin password , and check who is admin. Resetting admin password offical document link `https://docs.gitlab.com/12.10/ee/security/reset_root_password.html`
 
 Used command from this doc I could reset admin password. Start a Ruby on Rails console with this command:
-```gitlab-rails console -e production
+```
+ gitlab-rails console -e production
 ```
 Wait until the console has loaded.
 
 There are multiple ways to find your user. You can search for email or username.
 ```
-user = User.where(id: 1).first
+  user = User.where(id: 1).first
 ```
 Found Gitlab admin user:
 
@@ -163,17 +164,17 @@ Other type get username and email without Gitlab authentification is use api `ht
 
 Now you can change your password:
 
-``` 
-user.password = 'secret_pass'
-user.password_confirmation = 'secret_pass'
+```
+ user.password = 'secret_pass'
+ user.password_confirmation = 'secret_pass'
 ```
 
 It’s important that you change both password and password_confirmation to make it work.
 
 Don’t forget to save the changes.
 
-``` 
-user.save!
+```
+ user.save!
 ```
 Exit the console and try to login with your new password.
 
